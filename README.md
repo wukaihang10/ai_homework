@@ -50,7 +50,7 @@ nvidia-smi
 
 需要确认 `nvidia-smi` 可以正常显示显卡和 Driver Version，并且驱动版本能够支持当前环境中 ONNX Runtime GPU 所需的 CUDA 运行时（本项目使用 onnxruntime-gpu[cuda,cudnn]，对应 CUDA 12.x 运行时和 cuDNN 9.x）。如果命令不可用、驱动版本过旧，或不确定兼容性，建议先使用 CPU 版本命令完成实验。
 
-第一次运行项目前，必须先构建身份库。如果以下文件不存在，就需要运行对应命令（在github上下载的项目身份库已经建好了）：
+第一次运行项目前，必须先构建身份库。如果以下文件不存在，就需要运行对应命令（在github上下载的项目身份库已经建好了；当然后续注册图改变了需要重新构建）：
 
 ```text
 outputs/identity_registry.npz
@@ -71,7 +71,7 @@ python -m backend.cli --ctx-id 0 build self
 python -m backend.cli --ctx-id 0 build celeba
 ```
 
-如果需要在前端或命令行中评测自采集 20 人数据集，还需要准备 `dataset/test/annotations.jsonl`。如果该文件不存在，运行（在github上下载的项目已经包含此文件）：
+如果需要在前端或命令行中评测自采集 20 人数据集，还需要准备 `dataset/test/annotations.jsonl`。如果该文件不存在，运行（在github上下载的项目已经包含此文件；当然后续测试图变了需要重新构建）：
 
 CPU 版本：
 
