@@ -1,0 +1,232 @@
+{
+  "identities": [
+    {
+      "identity_id": "p01",
+      "name": "成龙",
+      "field": "影视",
+      "image_paths": [
+        "dataset\\registered\\p01\\p01_r01.jpg",
+        "dataset\\registered\\p01\\p01_r02.jpg",
+        "dataset\\registered\\p01\\p01_r03.jpg",
+        "dataset\\registered\\p01\\p01_r04.jpg",
+        "dataset\\registered\\p01\\p01_r05.jpg",
+        "dataset\\registered\\p01\\p01_r06.jpg"
+      ]
+    },
+    {
+      "identity_id": "p02",
+      "name": "章子怡",
+      "field": "影视",
+      "image_paths": [
+        "dataset\\registered\\p02\\p02_r01.jpg",
+        "dataset\\registered\\p02\\p02_r02.jpg",
+        "dataset\\registered\\p02\\p02_r03.jpg",
+        "dataset\\registered\\p02\\p02_r04.jpg"
+      ]
+    },
+    {
+      "identity_id": "p03",
+      "name": "刘德华",
+      "field": "影视/音乐",
+      "image_paths": [
+        "dataset\\registered\\p03\\p03_r01.jpg",
+        "dataset\\registered\\p03\\p03_r02.jpg",
+        "dataset\\registered\\p03\\p03_r03.jpg",
+        "dataset\\registered\\p03\\p03_r04.jpg",
+        "dataset\\registered\\p03\\p03_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p04",
+      "name": "周杰伦",
+      "field": "音乐",
+      "image_paths": [
+        "dataset\\registered\\p04\\p04_r01.jpg",
+        "dataset\\registered\\p04\\p04_r02.jpg",
+        "dataset\\registered\\p04\\p04_r03.jpg",
+        "dataset\\registered\\p04\\p04_r04.jpg",
+        "dataset\\registered\\p04\\p04_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p05",
+      "name": "邓紫棋",
+      "field": "音乐",
+      "image_paths": [
+        "dataset\\registered\\p05\\p05_r01.jpg",
+        "dataset\\registered\\p05\\p05_r02.jpg",
+        "dataset\\registered\\p05\\p05_r03.jpg",
+        "dataset\\registered\\p05\\p05_r04.jpg"
+      ]
+    },
+    {
+      "identity_id": "p06",
+      "name": "姚明",
+      "field": "体育",
+      "image_paths": [
+        "dataset\\registered\\p06\\p06_r01.jpg",
+        "dataset\\registered\\p06\\p06_r02.jpg",
+        "dataset\\registered\\p06\\p06_r03.jpg",
+        "dataset\\registered\\p06\\p06_r04.jpg"
+      ]
+    },
+    {
+      "identity_id": "p07",
+      "name": "谷爱凌",
+      "field": "体育",
+      "image_paths": [
+        "dataset\\registered\\p07\\p07_r01.jpg",
+        "dataset\\registered\\p07\\p07_r02.jpg",
+        "dataset\\registered\\p07\\p07_r03.jpg",
+        "dataset\\registered\\p07\\p07_r04.jpg",
+        "dataset\\registered\\p07\\p07_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p08",
+      "name": "郎平",
+      "field": "体育",
+      "image_paths": [
+        "dataset\\registered\\p08\\p08_r01.jpg",
+        "dataset\\registered\\p08\\p08_r02.jpg",
+        "dataset\\registered\\p08\\p08_r03.jpg",
+        "dataset\\registered\\p08\\p08_r04.jpg"
+      ]
+    },
+    {
+      "identity_id": "p09",
+      "name": "马云",
+      "field": "商业/科技",
+      "image_paths": [
+        "dataset\\registered\\p09\\p09_r01.jpg",
+        "dataset\\registered\\p09\\p09_r02.jpg",
+        "dataset\\registered\\p09\\p09_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p10",
+      "name": "屠呦呦",
+      "field": "科学",
+      "image_paths": [
+        "dataset\\registered\\p10\\p10_r01.jpg",
+        "dataset\\registered\\p10\\p10_r02.jpg",
+        "dataset\\registered\\p10\\p10_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p11",
+      "name": "Barack Obama（贝拉克·奥巴马）",
+      "field": "政治",
+      "image_paths": [
+        "dataset\\registered\\p11\\p11_r01.jpg",
+        "dataset\\registered\\p11\\p11_r02.jpg",
+        "dataset\\registered\\p11\\p11_r03.jpg",
+        "dataset\\registered\\p11\\p11_r04.jpg"
+      ]
+    },
+    {
+      "identity_id": "p12",
+      "name": "Angela Merkel（安格拉·默克尔）",
+      "field": "政治",
+      "image_paths": [
+        "dataset\\registered\\p12\\p12_r01.jpg",
+        "dataset\\registered\\p12\\p12_r02.jpg",
+        "dataset\\registered\\p12\\p12_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p13",
+      "name": "Narendra Modi（纳伦德拉·莫迪）",
+      "field": "政治",
+      "image_paths": [
+        "dataset\\registered\\p13\\p13_r01.jpg",
+        "dataset\\registered\\p13\\p13_r02.jpg",
+        "dataset\\registered\\p13\\p13_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p14",
+      "name": "Jacinda Ardern（杰辛达·阿德恩）",
+      "field": "政治",
+      "image_paths": [
+        "dataset\\registered\\p14\\p14_r01.jpg",
+        "dataset\\registered\\p14\\p14_r02.jpg",
+        "dataset\\registered\\p14\\p14_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p15",
+      "name": "Taylor Swift（泰勒·斯威夫特）",
+      "field": "音乐",
+      "image_paths": [
+        "dataset\\registered\\p15\\p15_r01.jpg",
+        "dataset\\registered\\p15\\p15_r02.jpg",
+        "dataset\\registered\\p15\\p15_r03.jpg",
+        "dataset\\registered\\p15\\p15_r04.jpg",
+        "dataset\\registered\\p15\\p15_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p16",
+      "name": "Beyoncé（碧昂丝）",
+      "field": "音乐",
+      "image_paths": [
+        "dataset\\registered\\p16\\p16_r01.jpg",
+        "dataset\\registered\\p16\\p16_r02.jpg",
+        "dataset\\registered\\p16\\p16_r03.jpg",
+        "dataset\\registered\\p16\\p16_r04.jpg",
+        "dataset\\registered\\p16\\p16_r05.jpg",
+        "dataset\\registered\\p16\\p16_r06.jpg",
+        "dataset\\registered\\p16\\p16_r07.jpg",
+        "dataset\\registered\\p16\\p16_r08.jpg",
+        "dataset\\registered\\p16\\p16_r09.jpg"
+      ]
+    },
+    {
+      "identity_id": "p17",
+      "name": "Dwayne Johnson（道恩·强森）",
+      "field": "影视",
+      "image_paths": [
+        "dataset\\registered\\p17\\p17_r01.jpg",
+        "dataset\\registered\\p17\\p17_r02.jpg",
+        "dataset\\registered\\p17\\p17_r03.jpg"
+      ]
+    },
+    {
+      "identity_id": "p18",
+      "name": "Emma Watson（艾玛·沃森）",
+      "field": "影视",
+      "image_paths": [
+        "dataset\\registered\\p18\\p18_r01.jpg",
+        "dataset\\registered\\p18\\p18_r02.jpg",
+        "dataset\\registered\\p18\\p18_r03.jpg",
+        "dataset\\registered\\p18\\p18_r04.jpg",
+        "dataset\\registered\\p18\\p18_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p19",
+      "name": "Lionel Messi（莱昂内尔·梅西）",
+      "field": "体育",
+      "image_paths": [
+        "dataset\\registered\\p19\\p19_r01.jpg",
+        "dataset\\registered\\p19\\p19_r02.jpg",
+        "dataset\\registered\\p19\\p19_r03.jpg",
+        "dataset\\registered\\p19\\p19_r04.jpg",
+        "dataset\\registered\\p19\\p19_r05.jpg"
+      ]
+    },
+    {
+      "identity_id": "p20",
+      "name": "Serena Williams（塞雷娜·威廉姆斯）",
+      "field": "体育",
+      "image_paths": [
+        "dataset\\registered\\p20\\p20_r01.jpg",
+        "dataset\\registered\\p20\\p20_r02.jpg",
+        "dataset\\registered\\p20\\p20_r03.jpg"
+      ]
+    }
+  ],
+  "sample_count": 86,
+  "embedding_dim": 512
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Dataset Image Saver",
+  "description": "Save images into dataset folders with automatic naming.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["downloads", "storage", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Dataset Image Saver",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}

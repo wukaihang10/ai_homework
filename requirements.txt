@@ -1,0 +1,15 @@
+# Recommended Python: 3.12 or 3.13 for the smoothest conda install.
+# Python 3.14 is the latest stable Python now, but some computer-vision
+# wheels may lag behind it on Windows/conda mirrors.
+
+fastapi>=0.111
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+insightface>=1.0.1
+onnxruntime-gpu[cuda,cudnn]>=1.26.0
+opencv-python-headless>=4.13.0.92
+
+numpy>=2.0
+pillow>=10.0
+

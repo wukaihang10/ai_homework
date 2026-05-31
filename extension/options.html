@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dataset Saver 设置</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "PingFang SC", sans-serif;
+        margin: 20px;
+        color: #1f2937;
+      }
+      h1 {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 14px;
+        font-size: 13px;
+      }
+      input {
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 6px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+      }
+      button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        background: #2563eb;
+        color: white;
+        cursor: pointer;
+      }
+      .hint {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>目录设置</h1>
+    <label>
+      注册图目录 (registered)
+      <input id="registeredBase" type="text" />
+    </label>
+    <label>
+      测试图目录 (test)
+      <input id="testBase" type="text" />
+    </label>
+    <button id="save">保存设置</button>
+    <p class="hint">路径是相对浏览器“默认下载目录”的路径。</p>
+
+    <script src="options.js"></script>
+  </body>
+</html>

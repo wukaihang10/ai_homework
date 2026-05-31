@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>人脸识别控制台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">AI 实验人脸系统</p>
+          <h1>人脸识别控制台</h1>
+        </div>
+        <div class="status" id="backendStatus">正在检查后端</div>
+      </header>
+
+      <nav class="app-tabs" aria-label="主视图">
+        <button class="view-button active" id="recognitionTab" type="button">
+          识别
+        </button>
+        <button class="view-button" id="evaluationTab" type="button">
+          评测
+        </button>
+      </nav>
+
+      <section id="recognitionView">
+        <section class="control-band" aria-label="识别控制">
+          <div class="control-group">
+            <label for="datasetSelect">身份库</label>
+            <select id="datasetSelect">
+              <option value="self">自采集 20 人</option>
+              <option value="celeba">CelebA 100</option>
+            </select>
+          </div>
+
+          <button class="button outline" id="reloadButton" type="button">
+            重新加载身份库
+          </button>
+          <button
+            class="button primary"
+            id="recognizeButton"
+            type="button"
+            disabled
+          >
+            识别所选图片
+          </button>
+        </section>
+
+        <section class="workspace batch-workspace">
+          <div class="panel input-panel">
+            <div class="panel-head">
+              <p class="eyebrow">输入</p>
+              <span id="fileName">未选择图片</span>
+            </div>
+
+            <label class="dropzone" id="dropzone" for="fileInput">
+              <input id="fileInput" type="file" accept="image/*" multiple />
+              <span class="drop-title">将图片拖到这里</span>
+              <span class="drop-subtitle">或点击上传多张本地图片</span>
+            </label>
+
+            <div class="file-actions">
+              <button class="button outline" id="folderButton" type="button">
+                由文件夹批量导入
+              </button>
+              <button class="button outline" id="clearButton" type="button">
+                清空
+              </button>
+              <input
+                id="folderInput"
+                type="file"
+                accept="image/*"
+                webkitdirectory
+                multiple
+              />
+            </div>
+
+            <div class="queue" id="queueList">
+              <div class="empty-row">已选择的图片会显示在这里</div>
+            </div>
+          </div>
+
+          <div class="panel result-panel">
+            <div class="panel-head">
+              <p class="eyebrow">输出</p>
+              <span id="summaryText">等待识别</span>
+            </div>
+
+            <div class="view-switch" aria-label="结果视图模式">
+              <button
+                class="view-button active"
+                id="gridModeButton"
+                type="button"
+              >
+                纵向视图
+              </button>
+              <button class="view-button" id="carouselModeButton" type="button">
+                横向视图
+              </button>
+            </div>
+
+            <div class="progress-wrap" hidden>
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="results-grid" id="resultsGrid">
+              <div class="empty-row">标注结果会逐张显示在这里</div>
+            </div>
+
+            <div class="carousel-view" id="carouselView" hidden>
+              <button
+                class="nav-button"
+                id="carouselPrev"
+                type="button"
+                aria-label="上一张结果"
+              >
+                ‹
+              </button>
+              <div class="carousel-stage" id="carouselStage">
+                <div class="empty-row">标注结果会逐张显示在这里</div>
+              </div>
+              <button
+                class="nav-button"
+                id="carouselNext"
+                type="button"
+                aria-label="下一张结果"
+              >
+                ›
+              </button>
+              <div class="carousel-counter" id="carouselCounter">0 / 0</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-view" id="evaluationView" hidden>
+        <section class="control-band" aria-label="评测控制">
+          <div class="control-group">
+            <label for="evalDatasetSelect">身份库</label>
+            <select id="evalDatasetSelect">
+              <option value="self">自采集 20 人</option>
+              <option value="celeba">CelebA 100</option>
+            </select>
+          </div>
+
+          <button class="button primary" id="evalRunButton" type="button">
+            开始评测
+          </button>
+        </section>
+
+        <section class="workspace eval-workspace">
+          <div class="panel">
+            <div class="panel-head">
+              <p class="eyebrow">测试图片</p>
+              <span id="evalListSummary">未加载图片</span>
+            </div>
+            <div class="eval-list" id="evalImageList">
+              <div class="empty-row">选择身份库后会加载测试图片</div>
+            </div>
+          </div>
+
+          <div class="panel eval-result-panel">
+            <div class="panel-head">
+              <p class="eyebrow">评测结果</p>
+              <span id="evalAccuracy">等待评测</span>
+            </div>
+            <div class="eval-preview" id="evalPreview">
+              <div class="empty-row">点击图片或运行评测后查看结果</div>
+            </div>
+            <div class="panel-head compact-head">
+              <p class="eyebrow">错误样例</p>
+              <span id="evalWrongSummary">未加载</span>
+            </div>
+            <div class="eval-wrong-results" id="evalWrongResults">
+              <div class="empty-row">评测完成后，错误样例会显示在这里</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="message" id="message" aria-live="polite"></section>
+    </main>
+
+    <div class="preview-modal" id="previewModal" hidden>
+      <button
+        class="preview-backdrop"
+        id="previewBackdrop"
+        type="button"
+        aria-label="关闭预览"
+      ></button>
+      <div
+        class="preview-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="图片预览"
+      >
+        <div class="preview-head">
+          <span id="previewTitle">图片预览</span>
+          <button
+            class="icon-button"
+            id="previewClose"
+            type="button"
+            aria-label="关闭预览"
+          >
+            ×
+          </button>
+        </div>
+        <img id="previewImage" alt="放大的识别结果预览" />
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

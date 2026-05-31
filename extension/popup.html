@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dataset Image Saver</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Dataset Saver</h1>
+
+    <label class="field">
+      人物编号
+      <input id="personInput" type="text" placeholder="p01" />
+    </label>
+
+    <div class="field">
+      模式
+      <label class="radio">
+        <input type="radio" name="mode" value="registered" /> 注册图 (r)
+      </label>
+      <label class="radio">
+        <input type="radio" name="mode" value="test" /> 测试图 (t)
+      </label>
+    </div>
+
+    <button id="saveSettings" class="primary">保存当前人物/模式</button>
+
+    <div class="actions">
+      <button id="resetCounter">重置当前计数</button>
+      <button id="openOptions">设置目录</button>
+    </div>
+
+    <button id="resetAllCounters" class="secondary">重置全部计数</button>
+
+    <p id="currentCount" class="count"></p>
+
+    <p class="hint">右键图片 → 保存到当前人物</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
