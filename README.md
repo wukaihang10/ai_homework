@@ -30,6 +30,8 @@
 
 ## 快速开始
 
+首次在电脑使用这个程序，会网络请求下载模型，比较慢。本来想把模型上传到github，但是文件太大上传不了。
+
 注意：requirements.txt文件内写了“onnxruntime-gpu[cuda,cudnn]>=1.26.0”来为虚拟环境安装cuda相关依赖包，但包比较大，下载比较慢；如果电脑内已装了cuda且配置好了环境变量，可以删去这一行。如果后续出现依赖问题，再加上这一行并重新执行“pip install -r requirements.txt”。
 
 建议使用 Python 3.12 或 3.13：
