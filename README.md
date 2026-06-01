@@ -37,7 +37,7 @@
 
 ### 注意事项
 
-requirements.txt文件内写了“onnxruntime-gpu[cuda,cudnn]>=1.26.0”来为虚拟环境安装cuda相关依赖包，但包比较大，下载比较慢；如果电脑内已装了cuda且配置好了环境变量，可以删去这一行。如果后续出现依赖问题，再加上这一行并重新执行“pip install -r requirements.txt”。
+requirements.txt文件内写了“onnxruntime-gpu[cuda,cudnn]>=1.26.0”来为虚拟环境安装cuda相关依赖包，但包比较大，下载比较慢；如果电脑内已装了cuda且配置好了环境变、或者只想用cpu加速，可以删去这一行。如果后续出现依赖问题，再加上这一行并重新执行“pip install -r requirements.txt”。
 
 如果使用 NVIDIA GPU，先在终端检查显卡驱动：
 
