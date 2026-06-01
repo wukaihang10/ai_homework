@@ -1,3 +1,5 @@
 models/
 outputs/results/
 outputs/uploads/
+backend/__pycache__/
+.vscode/
