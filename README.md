@@ -139,9 +139,10 @@ fronted/index.html
 
 #### “识别”模式下的两个人脸识别结果图预览模式
 
-![alt text](<assert/屏幕截图 2026-06-01 153642.png>)
-
-![alt text](<assert/屏幕截图 2026-06-01 153739.png>)
+<div align="center">
+  <img src="assert/屏幕截图 2026-06-01 153642.png" alt="识别结果预览 1" width="45%" />
+  <img src="assert/屏幕截图 2026-06-01 153739.png" alt="识别结果预览 2" width="45%" />
+</div>
 **点击图片可放大预览**
 
 #### “评测“模式页面预览
